@@ -19,5 +19,5 @@ function myButtonClicked() {
   answer += number
 
 // output
-  document.getElementById('answer').innerHTML = "The sum is: " + answer
+  document.getElementById('answer').innerHTML = "The sum of all the numbers between 1 and " + number + " is " + answer
 }

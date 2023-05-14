@@ -1,7 +1,7 @@
 // Created By: Charlotte Jhu
 // Created On: May 2023
 //
-// This function does multiplication
+// This program adds all the numbers between 1 and the user's inputted number
 
 package main
 
@@ -10,28 +10,26 @@ import (
 )
 
 func main() {
-	// This function does multiplication
+	// This function adds all the numbers between 1 and the user's inputted number
 	// variables
-	var number1 int
-	var number2 int
-	var counter = 0
+	var number int
+	var counter int
 	var answer = 0
 
 	// input
-	fmt.Println("Let's do multiplication!")
-	fmt.Println("Enter the first number: ")
-	fmt.Scanln(&number1)
-	fmt.Println("Enter the second number: ")
-	fmt.Scanln(&number2)
+	fmt.Println("This program adds all the numbers between 1 and your inputted number")
+	fmt.Print("Enter your number: ")
+	fmt.Scanln(&number)
 
 	// process
-	for counter < number2 {
-		answer += number1
+	for counter < number {
+		answer += counter
 		counter++
 	}
+	answer += number
 
 	// output
 	fmt.Println("")
-	fmt.Println(number1, "x", number2, "is", answer)
+	fmt.Println("The sum of all the numbers between 1 and", number, "is", answer)
 	fmt.Println("\nDone.")
 }
